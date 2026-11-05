@@ -26,11 +26,16 @@ Open Settings with `Ctrl+,` or from the window menu. The page has a search box, 
 
 | Setting | Key | What it does |
 | --- | --- | --- |
-| Close behavior | `closeBehavior` | **Keep running** or **Quit** when the window's close button is used. Under the systemd unit the window always hides |
+| Close behavior | `closeBehavior` | **Keep running** or **Quit** when the window's close button is used. Hidden under the systemd unit, where the window always hides |
+| Startup folder | `startupFolder` | What opens when the app starts: the last used tabs (`last`), the home folder (`home`) or a chosen folder (its path) |
+| New window folder | `newWindowFolder` | Where a new window opens: the current folder (`current`), the home folder (`home`) or a chosen folder (its path) |
+| New tab folder | `newTabFolder` | Where a new tab opens: the current folder (`current`), the home folder (`home`) or a chosen folder (its path) |
 | Register as the session file manager | `registerFileManager` | Request `org.freedesktop.FileManager1` so reveal-in-file-manager calls open here. Never takes the name from another owner |
 | Open folders in a new tab | `openLocationIn` | Locations opened from other applications get their own tab instead of replacing the current one |
 | Extract archives on open | `extractOnOpen` | Double clicking an archive extracts it beside itself instead of opening it with an app |
 | Language | `language` | Follow the system language or pick one |
+
+A folder that no longer exists opens the home folder instead.
 
 ### Open and save dialogs
 
